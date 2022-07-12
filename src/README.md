@@ -23,3 +23,4 @@
 - **What we will use:**
 	- Node/Express and MongoDB Atlas will be used for the backend
 	- React (Vite) will be used for the frontend
+	- [app on Netlify](https://st-job-manager.netlify.app/)
