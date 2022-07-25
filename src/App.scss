@@ -1,23 +1,57 @@
-h1{
-  margin:0;
-}
-body{
-background-color: #333;
-color:#ccc;
-padding:2rem;
-font-size:1.4rem;
-}
-nav {
+body {
+  background-color: #333;
+  color: #ccc;
+  padding: 2rem;
+  font-size: 1.4rem;
+
+  -webkit-animation: fadein .4s ease-in;
+  -moz-animation: fadein .4s ease-in;
+  -o-animation: fadein .4s ease-in;
+  -ms-animation: fadein .4s ease-in;
+  animation: fadein .4s ease-in;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav {
     a {
-        color: #aaa;
-        text-decoration: none;
+      color: #aaa;
+      text-decoration: none;
     }
+
     a:not(:last-of-type)::after {
-        color: #444;
-        content: ' | ';
+      color: #444;
+      content: ' | ';
     }
- 
+
     a.active {
-        color: yellow;
+      color: yellow;
     }
+  }
+
+  .loggedInInfo {
+    color: orange;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .siteMessage {
+    background-color: #444;
+    color: tomato;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
